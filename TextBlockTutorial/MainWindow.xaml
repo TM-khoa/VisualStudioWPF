@@ -7,20 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Margin="0,0,0,-6">
-        <TextBlock Text="SpiritBoi" FontSize="50" Foreground="#FF0A81EF" MouseEnter="TextBlock_MouseEnter" 
+        <TextBlock Text="Ori" FontFamily="Orifont" FontSize="200" Foreground="#FF0636F7" MouseEnter="TextBlock_MouseEnter" 
                    AutomationProperties.Name="txblName" MouseLeave="TextBlock_MouseLeave"
-                   VerticalAlignment="Top" HorizontalAlignment="Center" TextWrapping="Wrap"></TextBlock>
-        <TextBlock FontSize="25" VerticalAlignment="Bottom">
+                   VerticalAlignment="Center" HorizontalAlignment="Center" TextWrapping="Wrap"
+                   Name="txblMain"></TextBlock>
+        <TextBlock FontSize="25" VerticalAlignment="Bottom" Margin="0,0,0,10">
             
             <Bold>
                 <Italic>
-                    <Underline>
+                    <Underline FontFamily="Times New Roman" FontSize="50">
                         
                     Visual Studio
                     </Underline>
                 </Italic>
             </Bold>
-            <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://www.google.com/">
+            <Span FontFamily="Edwardian Script ITC" FontSize="90" Foreground="#FF0636F7">
+                SpiritBoi
+            </Span>
+            <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://www.google.com/" FontSize="50">
                 Google
             </Hyperlink>
         </TextBlock>
