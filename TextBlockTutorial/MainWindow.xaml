@@ -1,0 +1,29 @@
+﻿<Window x:Class="TextBlockTutorial.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TextBlockTutorial"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Margin="0,0,0,-6">
+        <TextBlock Text="SpiritBoi" FontSize="50" Foreground="#FF0A81EF" MouseEnter="TextBlock_MouseEnter" 
+                   AutomationProperties.Name="txblName" MouseLeave="TextBlock_MouseLeave"
+                   VerticalAlignment="Top" HorizontalAlignment="Center" TextWrapping="Wrap"></TextBlock>
+        <TextBlock FontSize="25" VerticalAlignment="Bottom">
+            
+            <Bold>
+                <Italic>
+                    <Underline>
+                        
+                    Visual Studio
+                    </Underline>
+                </Italic>
+            </Bold>
+            <Hyperlink RequestNavigate="Hyperlink_RequestNavigate" NavigateUri="https://www.google.com/">
+                Google
+            </Hyperlink>
+        </TextBlock>
+
+    </Grid>
+</Window>
